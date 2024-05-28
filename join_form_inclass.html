@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="join_style.css">
+</head>
+<body>
+    <h3>가입 양식</h3>
+    <form>
+        <table>
+            <tr>
+                <td class="field">아이디 : </td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td class="field">비밀번호 : </td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td class="field">비밀번호 확인 : </td>
+                <td><input type="password" name="pw_check"></td>
+            </tr>
+            <tr>
+                <td class="field">이름 : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="field">성별 : </td>
+                <td><input type="radio" name="sex" checked> 여성&nbsp;&nbsp;<input type="radio" name="sex"> 남성</td>
+            </tr>
+            <tr>
+                <td class="field">휴대전화 : </td>
+                <td><select name="m_number1">
+                    <option>010</option>
+                    <option>011</option>
+                    <option>016</option>
+                </select> - <input class="hp" type="text" name="m_number2"> - <input class="hp" type="text" name="m_number3"></td>
+            </tr>
+            <tr>
+                <td class="field">이메일 : </td>
+                <td><input type="text"> @ <select>
+                    <option>선택</option>
+                    <option>naver.com</option>
+                    <option>daum.net</option>
+                    <option>gmail.com</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="field">취미 : </td>
+                <td><input class="hobby" type="checkbox" name="hobby1"> 음악감상&nbsp;&nbsp;<input class="hobby" type="checkbox" name="hobby2"> 독서&nbsp;&nbsp;<input class="hobby" type="checkbox" name="hobby3"> 등산</td>
+            </tr>
+            <tr>
+                <td id="intro" class="field">자기소개 : </td>
+                <td><textarea cols="35" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td class="field">파일 첨부 : </td>
+                <td><input id="file" type="file">* 2MB까지 가능</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
